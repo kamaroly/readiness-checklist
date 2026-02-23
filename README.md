@@ -1,6 +1,6 @@
 # Ash Phoenix Application Starter Kit
 
-![Unit Tests](https://github.com/kamaroly/ash-phoenix-starter/actions/workflows/elixir.yaml/badge.svg)
+![Unit Tests](https://github.com/kamaroly/readiness/actions/workflows/elixir.yaml/badge.svg)
 
 
 A starter Kit that helps you build what's unique to your application faster. 
@@ -51,8 +51,8 @@ You can find concepts used in this kit in the [Ash Framework for Phoenix Develop
 ## Installation 
 
 1. Clone 
-2. Rename your project with `mix rename AshPhoenixStarter MyNewProjectName`
-3. Replace `AshPhoenixStarter` with `MyNewProjectName` in your javascripts (This will automatically be cattered for in the future
+2. Rename your project with `mix rename Readiness MyNewProjectName`
+3. Replace `Readiness` with `MyNewProjectName` in your javascripts (This will automatically be cattered for in the future
 4. Confirm that all is well with `mix tests`
 5. Start implementing your new features
 

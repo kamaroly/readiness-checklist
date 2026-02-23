@@ -1,4 +1,4 @@
-defmodule AshPhoenixStarter.Repo.TenantMigrations.AddUserImpersonationTable do
+defmodule Readiness.Repo.TenantMigrations.AddUserImpersonationTable do
   @moduledoc """
   Updates resources based on their most recent snapshots.
 

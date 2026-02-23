@@ -1,4 +1,4 @@
-defmodule AshPhoenixStarter.Repo.TenantMigrations.InitialMigrations do
+defmodule Readiness.Repo.TenantMigrations.InitialMigrations do
   @moduledoc """
   Updates resources based on their most recent snapshots.
 

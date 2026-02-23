@@ -2,11 +2,11 @@ import Config
 config :ash, policies: [show_policy_breakdowns?: true]
 
 # Configure your database
-config :AshPhoenixStarter, AshPhoenixStarter.Repo,
+config :Readiness, Readiness.Repo,
   username: "postgres",
   password: "ikijumba",
   hostname: "localhost",
-  database: "AshPhoenixStarter_dev",
+  database: "Readiness_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -17,7 +17,7 @@ config :AshPhoenixStarter, AshPhoenixStarter.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we can use it
 # to bundle .js and .css sources.
-config :AshPhoenixStarter, AshPhoenixStarterWeb.Endpoint,
+config :Readiness, ReadinessWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
   http: [ip: {127, 0, 0, 1}, port: String.to_integer(System.get_env("PORT") || "4000")],
@@ -26,8 +26,8 @@ config :AshPhoenixStarter, AshPhoenixStarterWeb.Endpoint,
   debug_errors: true,
   secret_key_base: "u2v6CEq5SaCXqs6C1kN9q3XJVlNQqE49SsFYrwnO3paU5kthcIEpLuK0urfsOpJi",
   watchers: [
-    esbuild: {Esbuild, :install_and_run, [:AshPhoenixStarter, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:AshPhoenixStarter, ~w(--watch)]}
+    esbuild: {Esbuild, :install_and_run, [:Readiness, ~w(--sourcemap=inline --watch)]},
+    tailwind: {Tailwind, :install_and_run, [:Readiness, ~w(--watch)]}
   ]
 
 # ## SSL Support
@@ -54,18 +54,18 @@ config :AshPhoenixStarter, AshPhoenixStarterWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :AshPhoenixStarter, AshPhoenixStarterWeb.Endpoint,
+config :Readiness, ReadinessWeb.Endpoint,
   live_reload: [
     web_console_logger: true,
     patterns: [
       ~r"priv/static/(?!uploads/).*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/AshPhoenixStarter_web/(?:controllers|live|components|router)/?.*\.(ex|heex)$"
+      ~r"lib/Readiness_web/(?:controllers|live|components|router)/?.*\.(ex|heex)$"
     ]
   ]
 
 # Enable dev routes for dashboard and mailbox
-config :AshPhoenixStarter,
+config :Readiness,
   dev_routes: true,
   token_signing_secret: "7B/BPzeIzWI2IoXk/u0Fp8o5Sv3jF9vi"
 
