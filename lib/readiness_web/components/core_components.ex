@@ -90,7 +90,7 @@ defmodule ReadinessWeb.CoreComponents do
   """
   attr :rest, :global, include: ~w(href navigate patch method download name value disabled)
   attr :class, :string
-  attr :variant, :string, values: ~w(primary)
+  attr :variant, :string, values: ~w(btn primary)
   slot :inner_block, required: true
 
   def button(%{rest: rest} = assigns) do
@@ -109,7 +109,7 @@ defmodule ReadinessWeb.CoreComponents do
       """
     else
       ~H"""
-      <button class={@class} {@rest}>
+      <button class={[@class]} {@rest}>
         {render_slot(@inner_block)}
       </button>
       """

@@ -111,6 +111,26 @@ defmodule ReadinessWeb.Menu do
         ]
       },
       %{
+        title: gettext("Checklists"),
+        links: [
+          %{
+            href: ~p"/checklists/items",
+            icon: "hero-document-check-solid",
+            text: gettext("Items")
+          },
+          %{
+            href: ~p"/checklists/categories",
+            icon: "hero-rectangle-group-solid",
+            text: gettext("Categories")
+          },
+          %{
+            href: ~p"/checklists/areas",
+            icon: "hero-tag-solid",
+            text: gettext("Areas")
+          }
+        ]
+      },
+      %{
         title: gettext("Reports"),
         links: [
           %{

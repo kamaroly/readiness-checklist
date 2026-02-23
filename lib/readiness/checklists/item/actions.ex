@@ -3,5 +3,6 @@ defmodule Readiness.Checklists.Item.Actions do
     of: Ash.Resource
 
   actions do
+    defaults [:read, :destroy, create: :*, update: :*]
   end
 end
