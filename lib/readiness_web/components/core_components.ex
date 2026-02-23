@@ -188,14 +188,14 @@ defmodule ReadinessWeb.CoreComponents do
     <div class="fieldset mb-2">
       <label>
         <input type="hidden" name={@name} value="false" disabled={@rest[:disabled]} />
-        <span class="label">
+        <span class="label text-lg">
           <input
             type="checkbox"
             id={@id}
             name={@name}
             value="true"
             checked={@checked}
-            class={@class || "checkbox checkbox-sm"}
+            class={["checkbox", @class]}
             {@rest}
           />{@label}
         </span>
@@ -544,6 +544,18 @@ defmodule ReadinessWeb.CoreComponents do
     >
       {Phoenix.Naming.humanize(field)} {error_message}
     </span>
+    """
+  end
+
+  slot :inner_block
+  slot :legend
+
+  def fieldset(assigns) do
+    ~H"""
+    <fieldset class="fieldset  border-base-300 rounded-box w-xs border p-4">
+      <legend class="fieldset-legend text-lg">{render_slot(@legend)}</legend>
+      {render_slot(@inner_block)}
+    </fieldset>
     """
   end
 end

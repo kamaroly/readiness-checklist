@@ -48,6 +48,8 @@ defmodule ReadinessWeb.Router do
 
       live "/dashboard", DashboardLive
 
+      live "/checklists/items", Checklists.ItemsLive
+
       live "/reports/graphs", Reports.GraphsLive
       live "/reports/summaries", Reports.SummariesLive
 

@@ -4,7 +4,7 @@ defmodule ReadinessWeb.AuthController do
   alias Readiness.Accounts.UserImpersonation
 
   def success(conn, activity, user, _token) do
-    return_to = get_session(conn, :return_to) || ~p"/dashboard"
+    return_to = get_session(conn, :return_to) || ~p"/checklists/items"
 
     message =
       case activity do

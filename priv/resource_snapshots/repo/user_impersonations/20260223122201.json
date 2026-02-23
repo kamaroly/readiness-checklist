@@ -183,14 +183,14 @@
   "custom_indexes": [],
   "custom_statements": [],
   "has_create_action": true,
-  "hash": "7F3BA14896971CA438C55DF75B4A6D23D3E91AAD70680DA9F6A7D99C60757617",
+  "hash": "46097ACD0C4E1BD3323815CC86E20DFD121485748ED9CE07F450C9AA2CD5EDFA",
   "identities": [],
   "multitenancy": {
     "attribute": null,
     "global": null,
     "strategy": null
   },
-  "repo": "Elixir.AshPhoenixStarter.Repo",
+  "repo": "Elixir.Readiness.Repo",
   "schema": null,
   "table": "user_impersonations"
 }

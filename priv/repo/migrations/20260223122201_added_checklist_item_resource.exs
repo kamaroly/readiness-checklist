@@ -1,4 +1,4 @@
-defmodule Readiness.Repo.Migrations.MigrateResources1 do
+defmodule Readiness.Repo.Migrations.AddedChecklistItemResource do
   @moduledoc """
   Updates resources based on their most recent snapshots.
 
@@ -12,7 +12,7 @@ defmodule Readiness.Repo.Migrations.MigrateResources1 do
       remove :team_id
       remove :end_timestamp
       remove :start_timestamp
-      add :started_at, :utc_datetime, null: false
+      add :started_at, :utc_datetime_usec, default: fragment("(now() AT TIME ZONE 'utc')")
       add :ended_at, :utc_datetime
 
       add :team_domain,

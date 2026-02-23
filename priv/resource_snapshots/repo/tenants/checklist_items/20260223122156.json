@@ -25,7 +25,7 @@
       "type": "text"
     },
     {
-      "allow_nil?": false,
+      "allow_nil?": true,
       "default": "nil",
       "generated?": false,
       "precision": null,
@@ -33,32 +33,20 @@
       "references": null,
       "scale": null,
       "size": null,
-      "source": "role",
+      "source": "description",
       "type": "text"
     },
     {
-      "allow_nil?": false,
-      "default": "nil",
+      "allow_nil?": true,
+      "default": "\"daily\"",
       "generated?": false,
       "precision": null,
       "primary_key?": false,
       "references": null,
       "scale": null,
       "size": null,
-      "source": "hire_date",
-      "type": "date"
-    },
-    {
-      "allow_nil?": false,
-      "default": "nil",
-      "generated?": false,
-      "precision": null,
-      "primary_key?": false,
-      "references": null,
-      "scale": null,
-      "size": null,
-      "source": "hourly_rate",
-      "type": "decimal"
+      "source": "eheck_frequency",
+      "type": "text"
     },
     {
       "allow_nil?": false,
@@ -90,7 +78,7 @@
   "custom_indexes": [],
   "custom_statements": [],
   "has_create_action": false,
-  "hash": "5ECE3074369A4ED853EAA1B47780EE90ED3B200362DC24D6E323EE9EA7E7182C",
+  "hash": "09D597FF29CCDCBD4B350CD5728714F94DEEEEBD6ACCAC1E323DED11C9FC2427",
   "identities": [],
   "multitenancy": {
     "attribute": null,
@@ -99,5 +87,5 @@
   },
   "repo": "Elixir.Readiness.Repo",
   "schema": null,
-  "table": "farm_employees"
+  "table": "checklist_items"
 }

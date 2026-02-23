@@ -170,16 +170,7 @@ defmodule ReadinessWeb.Layouts do
 
   defp top_search_box(assigns) do
     ~H"""
-    <div class="relative w-[400px]">
-      <div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none">
-        <.icon name="hero-magnifying-glass" class="w-6 h-6" />
-      </div>
-      <input
-        type="search"
-        class="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-md bg-gray-50 text-base focus:outline-none focus:ring-1 focus:ring-gray-700 focus:border-gray-700 focus:bg-white placeholder-gray-500"
-        placeholder="Search members, reports and more…"
-      />
-    </div>
+    <div class="relative w-[400px]"></div>
     """
   end
 

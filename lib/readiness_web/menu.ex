@@ -26,6 +26,16 @@ defmodule ReadinessWeb.Menu do
         ]
       },
       %{
+        title: gettext("Checklists"),
+        links: [
+          %{
+            href: ~p"/checklists/items",
+            icon: "hero-chart-bar-solid",
+            text: gettext("Checklists")
+          }
+        ]
+      },
+      %{
         title: gettext("Reports"),
         links: [
           %{
