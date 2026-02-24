@@ -3,5 +3,6 @@ defmodule Readiness.Checklists do
 
   resources do
     resource Readiness.Checklists.Item
+    resource Readiness.Checklists.Area
   end
 end
